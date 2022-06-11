@@ -1,0 +1,393 @@
+/*
+* PostCSS by https://madlittlemods.github.io/postcss-css-variables/playground/ 
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #424242;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 3px solid #488500;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+nav {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+header a {
+  color: #488500;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: #488500;
+  text-decoration: none;
+}
+
+header a:active {
+  color: #9a334f;
+  border: 1px solid #9a334f;
+}
+
+header a:hover {
+  color: #488500;
+  border: 1px solid #9a334f;
+}
+
+header a:focus {
+  color: #488500;
+  border: 1px solid #9a334f;
+}
+
+a {
+  color: #488500;
+}
+
+a:visited {
+  color: #424242;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: #9a334f;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+  border: 3px solid #488500;
+}
+
+.profile p {
+  font-size: 20px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+}
+
+.about__narrative {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 300px;
+  flex: 1 1 300px;
+  padding-right: 50px;
+}
+
+.about__skills {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 300px;
+  flex: 1 0 300px;
+  margin: auto;
+}
+
+.div__button {
+  text-align: center;
+}
+
+.hobbies {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 20px;
+  background-color: #488500;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+.button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 20px;
+  background-color: #488500;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button:visited {
+  color: #fff;
+}
+
+table {
+  margin: auto;
+  margin-bottom: 25px;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+}
+
+thead {
+  font-size: 20px;
+  text-align: center;
+  background-color: #488500;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+  padding: 5px;
+}
+
+.experience {
+  text-align: center;
+}
+
+.camping-picture {
+  margin: auto;
+  max-width: 50%;
+  text-align: center;
+}
+
+#svg48 {
+  border-radius: 50%;
+  border: 3px solid #488500;
+}
+
+@-webkit-keyframes sun-animation {
+  0% {
+    fill: #ff7f00;
+    -webkit-transform: translate(-200px, -80px);
+    transform: translate(-200px, -80px);
+  }
+
+  25% {
+    fill: #f2bb00;
+    -webkit-transform: translate(-125px, -25px);
+    transform: translate(-125px, -25px);
+  }
+
+  50% {
+    fill: #ffd959;
+    -webkit-transform: translate(0px, 20px);
+    transform: translate(0px, 20px);
+  }
+
+  75% {
+    fill: #f2bb00;
+    -webkit-transform: translate(125px, -25px);
+    transform: translate(125px, -25px)
+  }
+
+  100% {
+    fill: #ff7f00;
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+    -webkit-transform: translate(210px, -80px);
+    transform: translate(210px, -80px)
+  }
+}
+
+@keyframes sun-animation {
+  0% {
+    fill: #ff7f00;
+    -webkit-transform: translate(-200px, -80px);
+    transform: translate(-200px, -80px);
+  }
+
+  25% {
+    fill: #f2bb00;
+    -webkit-transform: translate(-125px, -25px);
+    transform: translate(-125px, -25px);
+  }
+
+  50% {
+    fill: #ffd959;
+    -webkit-transform: translate(0px, 20px);
+    transform: translate(0px, 20px);
+  }
+
+  75% {
+    fill: #f2bb00;
+    -webkit-transform: translate(125px, -25px);
+    transform: translate(125px, -25px)
+  }
+
+  100% {
+    fill: #ff7f00;
+    -webkit-transform: translate(210px, -80px);
+    transform: translate(210px, -80px)
+  }
+}
+
+#path3348 {
+  -webkit-animation: 30s sun-animation infinite linear;
+  animation: 30s sun-animation infinite linear;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item {
+  border: 3px solid #488500;
+  padding: 20px
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-form {
+  text-align: center;
+  border: 3px solid #488500;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.form__submit {
+  font-size: 20px;
+  background-color: #488500;
+  color: #fff;
+  padding: 10px;
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+.form__submit:hover,
+.form_submit:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  border-top: 3px solid #488500;
+  margin-top: 50px;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
