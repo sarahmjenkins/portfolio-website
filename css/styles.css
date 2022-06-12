@@ -117,19 +117,14 @@ h1 {
   text-align: center;
 }
 
-.about {
-  display: flex;
-  padding: 50px;
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
-.about__narrative {
-  flex: 1 1 300px;
-  padding-right: 50px;
-}
-
-.about__skills {
-  flex: 1 0 300px;
-  margin: auto;
+.about-grid__item {
+  padding: 20px
 }
 
 .div__button {
@@ -285,7 +280,8 @@ td {
 }
 
 @media all and (max-width: 500px) {
-  .grid {
+  .grid,
+  .about-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -293,6 +289,9 @@ td {
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 }
 
