@@ -322,6 +322,15 @@ td {
   padding: 20px
 }
 
+.project-image {
+  max-width: 100%;
+  border: 1px solid #9a334f;
+}
+
+.grid__item h2 {
+  text-align: center;
+}
+
 .contact-info {
   text-align: center;
 }
