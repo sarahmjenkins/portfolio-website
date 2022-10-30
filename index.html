@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
   </head>
 
   <body>
@@ -35,20 +34,23 @@
       </nav>
     </header>
 
-    <main class="profile">
-      <img src="img/Sarah_Jenkins_portrait.jpg" class="profile__portrait" alt="Sarah Jenkins portrait">
-      <h1>Hello World</h1>
-      <p>
-        I'm Sarah!<br> I am studying to be a web developer.
-      </p>
-      <a href="#" class="call-to-action">Call to action</a>
+    <main class="profile about-grid">
+      <div class="about-grid__item image-div">
+        <img src="img/Sarah_Jenkins_portrait.jpg" class="profile__portrait" alt="Sarah Jenkins portrait">
+      </div>
+      <div class="about-grid__item">
+        <h1>Hello World</h1>
+        <p>
+          I'm Sarah!<br> I am a web developer located in Denver, Colorado.
+        </p>
+        <a href="contact.html" class="call-to-action">Contact me to learn more!</a>
+      </div>
     </main>
 
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
         <a href="https://www.github.com/sarahmjenkins" target="_blank"><img src="img/githublogo.svg" width="30" height="30" alt="github logo"></a>
-        <a href="https://www.twitter.com/_sarahjenkins" target="_blank"><img src="img/twitterlogo.svg" width="30" height="30" alt="twitter logo"></a>
         <a href="https://www.linkedin.com/in/sarahmjenkins" target="blank"><img src="img/linkedinlogo.svg" width="30" height="30" alt="linkedin logo"></a>
       </div>
     </footer>

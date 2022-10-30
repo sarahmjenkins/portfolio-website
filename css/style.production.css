@@ -1,8 +1,8 @@
 /*
 * PostCSS by https://madlittlemods.github.io/postcss-css-variables/playground/ 
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
 
@@ -24,7 +24,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 20px;
+  margin-bottom: 50px;
   border-bottom: 3px solid #488500;
 }
 
@@ -103,12 +103,25 @@ a:active {
   text-align: center;
 }
 
+.image-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .profile__portrait {
-  float: left;
   width: 250px;
-  margin-right: 40px;
+  margin: auto;
   border-radius: 50%;
   border: 3px solid #488500;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .profile p {
@@ -119,7 +132,6 @@ h1 {
   font-weight: 700;
   font-size: 50px;
   line-height: 1;
-  padding-top: 25px;
   text-align: center;
 }
 
