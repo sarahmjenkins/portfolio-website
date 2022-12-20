@@ -140,6 +140,18 @@ h1 {
   text-align: center;
 }
 
+.index-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.index-grid__item {
+  padding: 20px
+}
+
 .about-grid {
   display: -ms-grid;
   display: grid;
