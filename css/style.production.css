@@ -17,13 +17,16 @@ body {
   font-size: 16px;
   line-height: 2;
   color: #424242;
+  margin: 10px;
 }
 
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   margin-bottom: 50px;
   border-bottom: 3px solid #488500;
@@ -140,8 +143,8 @@ h1 {
 .about-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 20px;
 }
 
@@ -323,16 +326,12 @@ td {
 
 .grid__item {
   border: 3px solid #488500;
-  padding: 20px
+  padding: 20px;
 }
 
 .project-image {
   max-width: 100%;
   border: 1px solid #9a334f;
-}
-
-.grid__item h2 {
-  text-align: center;
 }
 
 .contact-info {
