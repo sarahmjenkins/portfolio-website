@@ -213,6 +213,7 @@ td {
 
 .camping-picture {
   margin: auto;
+  margin-top: 50px;
   max-width: 50%;
   text-align: center;
 }
