@@ -186,6 +186,7 @@ button {
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
+  margin-bottom: 50px
 }
 
 .button {
@@ -202,6 +203,7 @@ button {
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
+  margin-bottom: 50px
 }
 
 button:hover,
@@ -248,7 +250,6 @@ td {
 
 .camping-picture {
   margin: auto;
-  margin-top: 50px;
   max-width: 50%;
   text-align: center;
 }
